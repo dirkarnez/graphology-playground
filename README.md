@@ -3,3 +3,4 @@
 ### TODOs
 - [ ] add yaml
 - [ ] add https://github.com/jacomyal/sigma.js
+- [ ] Standard libraries
