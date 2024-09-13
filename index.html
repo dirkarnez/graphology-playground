@@ -62,6 +62,20 @@
     <!-- To use the standard library -->
     <script src="./graphology-library.min.js"></script>
 
+    <script>
+        const graphologyToD3 = (
+  graphologyGraph,
+  { nodeList = "nodes", edgeList = "links" } = {}
+) => {
+  const outJSON = graphologyGraph.toJSON();
+  const d3JSON = {
+    [nodeList]: outJSON.nodes.map((d) => d.attributes),
+    [edgeList]: outJSON.edges.map((d) => d.attributes)
+  };
+  return d3JSON;
+}
+    </script>
+
     <!-- This exposes a global variable named "graphology" -->
     <script>
         const graph = new graphology.DirectedGraph();
