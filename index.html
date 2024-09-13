@@ -66,12 +66,22 @@
     <script>
         const graph = new graphology.DirectedGraph();
 
-        // Adding some nodes
-        graph.addNode('John');
-        graph.addNode('Martha');
+        // // Adding some nodes
+        // graph.addNode('John');
+        // graph.addNode('Martha');
 
-        // Adding an edge
-        graph.addDirectedEdge('John', 'Martha');
+        // // Adding an edge
+        // graph.addDirectedEdge('John', 'Martha');
+
+        graph.addNode("Andrea");
+        graph.addNode("Bill");
+        graph.addNode("Carole");
+        graph.addNode("Daniel");
+
+        graph.addDirectedEdge("Andrea", "Bill");
+        graph.addDirectedEdge("Bill", "Carole");
+        graph.addDirectedEdge("Carole", "Daniel");
+        graph.addDirectedEdge("Daniel", "Andrea");
 
         // Displaying useful information about your graph
         console.log('Number of nodes', graph.order);

@@ -2,8 +2,9 @@
 ==========================================================================
 ### Notes
 - `graph.import` append data to current graph
+- **DO NOT USE [sigma.js](https://github.com/jacomyal/sigma.js), IT IS NOT USER-FRIENDLY** 
 
 ### TODOs
 - [ ] add yaml
-- [ ] add https://github.com/jacomyal/sigma.js
+- [ ] add 
 - [ ] Standard libraries
