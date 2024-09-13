@@ -81,6 +81,15 @@
         graph.forEachNode(node => {
             console.log(node);
         });
+
+        try {
+            const anotherGraph = graphology.from(JSON.parse(JSON.stringify(graph.export())));
+            const equal = JSON.stringify(anotherGraph.export()) == JSON.stringify(graph.export());
+            debugger;
+        } catch(e) {
+            debugger;
+        }
+        
         debugger;
     </script>
 
