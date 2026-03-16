@@ -8,4 +8,5 @@
 - [ ] add yaml
 - [ ] add 
 - [ ] Standard libraries
+- [ ] `crypto.randomUUID().replaceAll("-", "")`
 - [ ] [D3 + Graphology Utilities / Robert Lesser | Observable](https://observablehq.com/@rlesser/d3-graphology-utilities)
